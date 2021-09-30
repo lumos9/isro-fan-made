@@ -9,16 +9,10 @@ const count = ref(0)
 </script>
 
 <template>
-    <div class="landing-container">
+    <div class="missions-container">
         <div id="intro" class="bg-image shadow-2-strong">
             <div class="mainTitle">
-                <h1 id="title1" class="w-title">Indian Space Research Organisation</h1>
-            </div>
-            <div class="mainTitle">
-                <h2 id="title2" class="w-title">Department of Space</h2>
-            </div>
-            <div class="mainTitle">
-                <h4 id="title3" class="w-title">Government of India</h4>
+                <h1 id="title1" class="w-title">About</h1>
             </div>
         </div>
     </div>
