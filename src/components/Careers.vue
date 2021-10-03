@@ -1,0 +1,144 @@
+<template>
+    <div class="careers-container">
+        <div id="intro" class="shadow-2-strong item-container">
+            <div id="page-title">
+                <h1>Want to build the future?</h1>
+                <h3>Join the team to make a difference</h3>
+            </div>
+            <div id="input-container">
+                <form class="row g-3 custom-align">
+                    <div class="col-md-6">
+                        <input type="search" class="form-control form-control-lg" id="jobSearch" placeholder="Search Job Title" v-model="searchQuery">
+                    </div>
+                    <div class="col-md-4">
+                        <select id="location" class="form-select form-select-lg" title="Location" v-model="selected">
+                            <option selected>All locations</option>
+                            <option>Sriharikota, Andhra Pradesh</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="result-container">
+                <div id="result-heading">
+                    <h4 v-if="searchQuery == ''">Open positions at {{ selected }}</h4>
+                    <h4 v-else-if="filteredJobs.length == 0 && selected != 'All locations'">No open positions for '{{searchQuery}}' at {{ selected }}</h4>
+                    <h4 v-else-if="filteredJobs.length == 0 && selected == 'All locations'">No open positions for '{{searchQuery}}'</h4>
+                </div>
+                <div class="result-set" v-if="filteredJobs.length > 0">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date Posted</th>
+                                <th scope="col">Job Title</th>
+                                <th scope="col">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody v-for="job in filteredJobs" v-bind:key="job.id">
+                            <tr>
+                                <th scope="row">{{ job.id }}</th>
+                                <td>{{ job.datePosted }}</td>
+                                <td>
+                                    <a v-bind:href="job.link" target="_blank">
+                                        {{ job.title }}
+                                    </a>
+                                </td>
+                                <td>{{ job.location }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+class Job {
+    constructor(id, datePosted, title, link, location) {
+        this.id = id;
+        this.datePosted = datePosted;
+        this.title = title;
+        this.link = link;
+        this.location = location;
+    }
+}
+export default {
+    data() {
+        return {
+            searchQuery: '',
+            selected: 'All locations',
+            jobsList: [
+                new Job(
+                    1,
+                    '03 Oct 2021',
+                    'Software Engineer',
+                    'https://www.google.com',
+                    'Sriharikota, Andhra Pradesh'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                )
+            ]
+        }
+    },
+    computed: {
+        filteredJobs() {
+            return this.jobsList.filter(job => {
+                return (job.location.toLowerCase().includes(this.selected.toLowerCase())
+                         || this.selected.toLowerCase() === 'all locations') &&
+                        job.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+            })
+        }
+    }
+}
+</script>
+
+
+<style scoped>
+#intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page-title {
+    margin-top: 20vh;
+    margin-bottom: 4vh;
+}
+
+#input-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.custom-align {
+    display: flex;
+    justify-content: center;
+}
+
+#jobSearch, #location {
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.368);
+}
+
+.result-container {
+    width: 60%;
+    margin-top: 6vh;
+    overflow-wrap: break-word;
+}
+
+.result-set {
+   margin-top: 3vh;
+}
+
+table {
+    color: white !important;
+}
+</style>

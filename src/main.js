@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import Vue3Autocounter from 'vue3-autocounter';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import router from './router'
@@ -13,5 +14,6 @@ library.add(fas, fab);
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
+.component('vue3-autocounter', Vue3Autocounter)
 .use(router)
 .mount('#app')

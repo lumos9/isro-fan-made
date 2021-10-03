@@ -15,7 +15,8 @@
     "@popperjs/core": "^2.10.1",
     "bootstrap": "^5.0.0-beta3",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.11",
+    "vue3-autocounter": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.0",

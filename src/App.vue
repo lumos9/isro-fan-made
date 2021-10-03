@@ -6,9 +6,12 @@
 <template>
   <div class="app-container">
     <div class="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-dark py-4">
+      <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
-              <router-link to="/" class="navbar-brand">ISRO</router-link>
+              <router-link to="/" class="navbar-brand">
+                <!--<img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
+                ISRO
+              </router-link>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -51,7 +54,7 @@
     </div>
     <router-view />
     <footer class="py-4">
-      <div>ISRO © {{ new Date().getFullYear() }}</div>
+      <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ISRO © {{ new Date().getFullYear() }}</div>
     </footer>
   </div>
   
@@ -91,6 +94,7 @@ html {
 
 .navbar {
     background: linear-gradient(to top, rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%) !important;
+    padding: 1.5rem !important;
 }
 
 /*.navbar {
@@ -102,6 +106,7 @@ a {
     position: relative;
     padding-bottom: 0.2rem;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 /* Fade in */
@@ -128,5 +133,13 @@ a:hover::after,
 a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
+}
+
+.item-container {
+  padding-top: 3rem;
+}
+
+footer {
+  z-index: 2;
 }
 </style>

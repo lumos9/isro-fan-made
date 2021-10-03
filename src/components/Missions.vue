@@ -1,62 +1,142 @@
 <template>
-    <div class="timeline-container" id="timeline-content">
-        <div class="timeline-nav-container" id="timeline-nav-content"></div>
-        <div class="timeline-overview">
-            <div class="timeline-item bg-image shadow-2-strong" id="launch1" data-label="Chandrayan-2">
-                <div class="mainTitle">
-                    <h1 id="title1" class="w-title">Chandrayan-2</h1>
+    <div class="missions-container" id="missions-content">
+        <div class="missions-item bg-image shadow-2-strong item-container" id="overview">
+            <div class="mainTitle">
+                <div>
+                    <div class="counter">
+                        <vue3-autocounter
+                            ref='counter'
+                            :startAmount='0'
+                            :endAmount='550' 
+                            :duration='1'
+                            separator=','
+                            :autoinit='true'/>
+                    </div>
+                    <div>Total Missions</div>
                 </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item px-5">
+                        <div class="counter">
+                            <vue3-autocounter
+                                ref='counter'
+                                :startAmount='0'
+                                :endAmount='112' 
+                                :duration='1'
+                                separator=','
+                                :autoinit='true'/>
+                        </div>
+                        <div>Spacecraft Missions</div>
+                    </li>
+                    <li class="list-inline-item px-5">
+                        <div class="counter">
+                            <vue3-autocounter
+                                ref='counter'
+                                :startAmount='0'
+                                :endAmount='82' 
+                                :duration='1'
+                                separator=','
+                                :autoinit='true'/>
+                        </div>
+                        <div>Launch Missions</div>
+                    </li>
+                    <li class="list-inline-item px-5">
+                        <div class="counter">
+                            <vue3-autocounter
+                                ref='counter'
+                                :startAmount='0'
+                                :endAmount='12' 
+                                :duration='1'
+                                separator=','
+                                :autoinit='true'/>
+                        </div>
+                        <div>Student Missions</div>
+                    </li>
+                    <li class="list-inline-item px-5">
+                        <div class="counter">
+                            <vue3-autocounter
+                                ref='counter'
+                                :startAmount='0'
+                                :endAmount='2' 
+                                :duration='1'
+                                separator=','
+                                :autoinit='true'/>
+                        </div>
+                        <div>Re-entry Missions</div>
+                    </li>
+                    <li class="list-inline-item px-5">
+                        <div class="counter">
+                            <vue3-autocounter
+                                ref='counter'
+                                :startAmount='0'
+                                :endAmount='342' 
+                                :duration='1'
+                                separator=','
+                                :autoinit='true'/>
+                        </div>
+                        <div>International Missions</div>
+                    </li>
+                </ul>
             </div>
-            <div class="timeline-item bg-image shadow-2-strong" id="launch2" data-label="Chandrayan-1">
-                <div class="mainTitle">
-                    <h1 id="title1" class="w-title">Chandrayan-1</h1>
-                </div>
+        </div>
+        <div class="missions-list-container">
+            <div class="missions-list-nav-container">
+                <ul class="missions-list-nav">
+                    <li v-for="(item, index) in items" v-bind:key="index" v-on:click="currentTab = item.year">
+                        <div>{{ item.year }}</div>
+                    </li>
+                </ul>
             </div>
+            <component v-bind:is="currentTabComponent"></component>
+            <!--<div class="missions-item bg-image shadow-2-strong item-container" id="launch1"></div>-->
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            const sections = document.querySelectorAll(".timeline-item");
-            const navContainer = document.createElement("div");
-            const navItems = Array.from(sections).map((section) => {
-                return `<div class="timeline-nav-item" data-for-section="${section.id}">
-                            <a href="#${section.id}" class="timeline-nav-link"></a>
-                            <span class="nav-label">${section.dataset.label}</span>
-                        </div>`;
-            });
+import Missions2019 from "./missions/Missions2019.vue";
+import Missions2021 from "./missions/Missions2021.vue";
+import MissionsFuture from "./missions/MissionsFuture.vue";
 
-            navContainer.classList.add("timeline-nav");
-            navContainer.innerHTML = navItems.join("");
-
-            const observer = new IntersectionObserver(
-                (entries) => {
-                document.querySelectorAll(".timeline-nav-link").forEach((navLink) => {
-                    navLink.classList.remove("timeline-nav-link-selected");
-                });
-
-                const visibleSection = entries.filter((entry) => entry.isIntersecting)[0];
-
-                document
-                    .querySelector(
-                    `.timeline-nav-item[data-for-section="${visibleSection.target.id}"] .timeline-nav-link`
-                    )
-                    .classList.add("timeline-nav-link-selected");
+export default {
+    data() {
+        return {
+            currentTab: 'Future',
+            items: [
+                {     
+                    name: 'Future',
+                    id: 'launch3',
+                    year: 'Future'
                 },
-                { threshold: 0.5 }
-            );
-
-            sections.forEach((section) => observer.observe(section));
-
-            document.getElementById('timeline-nav-content').appendChild(navContainer);
+                {     
+                    name: 'Chandrayan - 2',
+                    id: 'launch2',
+                    date: '22nd July 2021',
+                    year: '2021'
+                },
+                { 
+                    name: 'Chandrayan - 1',
+                    id: 'launch1',
+                    date: '22nd September 2019',
+                    year: '2019'
+                }
+            ]
         }
+    },
+    computed: {
+        currentTabComponent() {
+            return 'Missions' + this.currentTab;
+        }
+    },
+    components: {
+        Missions2019,
+        Missions2021,
+        MissionsFuture
     }
+};
 </script>
 
 <style scoped>
-.timeline-item {
+.missions-item {
     background: no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -69,68 +149,45 @@
     flex-direction: column;
 }
 
-#launch1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../assets/chandrayan 2.jpg');;
+.missions-list-container {
+    height: 100vh;
 }
 
-#launch2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../assets/isro.jpg');;
+.missions-list-nav {
+    padding: 0;
 }
 
-.timeline-nav-container {
-    position: fixed;
-    width: 15%;
-    height: 100%;
-    background-color: black;
+.missions-list-nav > li {
+    list-style: none;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
-.timeline-nav {
-    position: relative;
-    top: 50%;
-    left: 5%;
+.missions-list-nav > li:hover {
+    text-decoration: underline;
 }
 
-/*
-.timeline-nav {
-  --nav-gap: 15px;
-  padding: var(--nav-gap);
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.missions-list-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    padding-left: 5vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-.timeline-nav-item {
-  align-items: center;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: var(--nav-gap);
+#overview {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url('../assets/missions_overview.jpg');
 }
 
-.timeline-nav-link:hover ~ .timeline-nav-label {
-  opacity: 1;
+.counter {
+    font-size: 7vh;
+    text-align: center;
 }
-
-.timeline-nav-label {
-  color: #000000;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-
-.timeline-nav-link {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  height: var(--nav-gap);
-  margin-left: var(--nav-gap);
-  transition: transform 0.1s;
-  width: var(--nav-gap);
-}
-
-.timeline-nav-link-selected {
-  background: #000000;
-  transform: scale(1.4);
-}*/
 
 #title1 {
     font-size: 3rem !important;
@@ -140,20 +197,8 @@
     color: white;
 }
 
-.timeline-container {
+.missions-container {
     background-color: white;
     color: white;
-}
-
-.timeline {
-    width: 80%;
-    margin: auto;
-    margin-top: 10rem;
-}
-
-.timeline-timeline-nav-link {
-    position: absolute;
-    top: 50%;
-    left: 10%;
 }
 </style>
