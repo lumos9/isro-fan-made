@@ -14,6 +14,7 @@
                         <select id="location" class="form-select form-select-lg" title="Location" v-model="selected">
                             <option selected>All locations</option>
                             <option>Sriharikota, Andhra Pradesh</option>
+                            <option>Bengaluru, Karnataka</option>
                         </select>
                     </div>
                 </form>
@@ -82,6 +83,272 @@ export default {
                     'Chief Engineer II',
                     'https://www.google.com',
                     'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
+                ),
+                new Job(
+                    2,
+                    '02 Oct 2021',
+                    'Chief Engineer II',
+                    'https://www.google.com',
+                    'Bengaluru, Karnataka'
                 )
             ]
         }
@@ -101,7 +368,7 @@ export default {
 
 <style scoped>
 #intro {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
