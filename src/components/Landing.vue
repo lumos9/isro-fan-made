@@ -29,7 +29,7 @@ const count = ref(0)
 
 <style scoped>
 #intro {
-    background: no-repeat center center fixed;
+    background: no-repeat center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url("../assets/isro.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;

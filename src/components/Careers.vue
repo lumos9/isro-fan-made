@@ -21,7 +21,11 @@
             </div>
             <div class="result-container">
                 <div id="result-heading">
-                    <h4 v-if="searchQuery == ''">Open positions at {{ selected }}</h4>
+                    <h4 v-if="searchQuery == ''">
+                        <div class="mb-3">Open positions</div>
+                        <div class="mb-3">at</div>
+                        <div class="mb-3">{{ selected }}</div>
+                    </h4>
                     <h4 v-else-if="filteredJobs.length == 0 && selected != 'All locations'">No open positions for '{{searchQuery}}' at {{ selected }}</h4>
                     <h4 v-else-if="filteredJobs.length == 0 && selected == 'All locations'">No open positions for '{{searchQuery}}'</h4>
                 </div>
@@ -35,8 +39,8 @@
                                 <th scope="col">Location</th>
                             </tr>
                         </thead>
-                        <tbody v-for="job in filteredJobs" v-bind:key="job.id">
-                            <tr>
+                        <tbody>
+                            <tr v-for="job in filteredJobs" v-bind:key="job.id">
                                 <th scope="row">{{ job.id }}</th>
                                 <td>{{ job.datePosted }}</td>
                                 <td>
@@ -407,5 +411,9 @@ export default {
 
 table {
     color: white !important;
+}
+
+thead, tr {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 </style>

@@ -72,15 +72,10 @@ html {
 
 #app {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  background-color: black;
-}
-
-.app-container {
   background-color: black;
 }
 
@@ -99,6 +94,7 @@ html {
 .navbar {
     background: linear-gradient(to top, rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%) !important;
     padding: 1.5rem !important;
+    font-weight: 500;
 }
 
 /*.navbar {
