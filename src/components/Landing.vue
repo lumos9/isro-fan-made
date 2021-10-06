@@ -10,7 +10,7 @@ const count = ref(0)
 
 <template>
     <div class="landing-container">
-        <div id="intro" class="bg-image shadow-2-strong item-container">
+        <div id="intro" class="bg-image shadow-2-strong page-container">
             <div id="logo"></div>
             <div class="mainTitle">
                 <!--<h1 id="title1" class="w-title">I<div class="fullform">ndian</div> S<div class="fullform">pace</div> R<div class="fullform">esearch</div> O<div class="fullform">rganisation</div></h1>-->

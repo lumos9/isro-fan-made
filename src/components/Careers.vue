@@ -1,6 +1,6 @@
 <template>
     <div class="careers-container">
-        <div id="intro" class="shadow-2-strong item-container">
+        <div id="intro" class="shadow-2-strong page-container">
             <div id="page-title">
                 <h1>Want to build the future?</h1>
                 <h3>Join the team to make a difference</h3>
@@ -380,7 +380,7 @@ export default {
 }
 
 #input-container {
-    width: 70%;
+    min-width: 80%;
     margin: 0 auto;
 }
 
@@ -396,7 +396,7 @@ export default {
 }
 
 .result-container {
-    width: 60%;
+    min-width: 70%;
     margin-top: 6vh;
     overflow-wrap: break-word;
 }

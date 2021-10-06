@@ -52,7 +52,9 @@
           </div>
       </nav>
     </div>
-    <router-view />
+    <div id="page">
+      <router-view />
+    </div>
     <footer class="py-4">
       <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ISRO © {{ new Date().getFullYear() }}</div>
     </footer>
@@ -75,6 +77,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
+  background-color: black;
 }
 
 .app-container {
@@ -85,6 +88,7 @@ html {
     position: fixed;
     width: -webkit-fill-available;
     z-index: 2;
+    height: 6rem;
 }
 
 .navbar-brand {
@@ -135,8 +139,11 @@ a:focus::after {
     transform: translate3d(0, 0.2em, 0);
 }
 
-.item-container {
-  padding-top: 3rem;
+.page-container {
+  padding-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 6rem;
 }
 
 footer {

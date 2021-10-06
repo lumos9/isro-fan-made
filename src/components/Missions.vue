@@ -1,6 +1,6 @@
 <template>
     <div class="missions-container" id="missions-content">
-        <div class="missions-item bg-image shadow-2-strong item-container" id="overview">
+        <div class="page-container missions-item bg-image shadow-2-strong" id="overview">
             <div class="mainTitle">
                 <div>
                     <div class="counter">
@@ -87,7 +87,6 @@
                 </ul>
             </div>
             <component v-bind:is="currentTabComponent"></component>
-            <!--<div class="missions-item bg-image shadow-2-strong item-container" id="launch1"></div>-->
         </div>
     </div>
 </template>
@@ -194,11 +193,6 @@ export default {
 }
 
 .w-title {
-    color: white;
-}
-
-.missions-container {
-    background-color: white;
     color: white;
 }
 </style>
