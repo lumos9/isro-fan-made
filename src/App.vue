@@ -4,79 +4,77 @@
 </script>
 
 <template>
-  <div class="app-container">
-    <div class="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-              <router-link to="/" class="navbar-brand">
-                <!--<img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
-                ISRO
-              </router-link>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="nav navbar-nav flex-fill justify-content-center">
-                      <li class="nav-item">
-                          <router-link to="/" class="nav-link active px-4">
-                            <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</div>
-                          </router-link>
-                      </li>
-                      <li class="nav-item">
-                        <router-link to="/about" class="nav-link px-4">
-                          <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</div>
-                        </router-link>
-                      </li>
-                      <li class="nav-item">
-                        <router-link to="/missions" class="nav-link px-4">
-                          <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Missions</div>
-                        </router-link>
-                      </li>
-                      <li class="nav-item">
-                        <router-link to="/careers" class="nav-link px-4">
-                          <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Careers</div>
-                        </router-link>
-                      </li>
-                      <li class="nav-item">
-                        <router-link to="/contact" class="nav-link px-4">
-                          <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact Us</div>
-                        </router-link>
-                      </li>
-                      <li class="nav-item">
-                        <router-link to="/updates" class="nav-link px-4">
-                          <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Updates</div>
-                        </router-link>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+    <div class="app-container">
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <router-link to="/" class="navbar-brand">
+                        <!--<img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
+                        ISRO
+                    </router-link>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav flex-fill justify-content-center">
+                            <li class="nav-item">
+                                <router-link to="/" class="nav-link active px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/about" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/missions" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Missions</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/careers" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Careers</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/contact" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact Us</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/updates" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Updates</div>
+                                </router-link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="page">
+            <router-view />
+        </div>
+        <footer class="py-4">
+            <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ISRO © {{ new Date().getFullYear() }}</div>
+        </footer>
     </div>
-    <div id="page">
-      <router-view />
-    </div>
-    <footer class="py-4">
-      <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ISRO © {{ new Date().getFullYear() }}</div>
-    </footer>
-  </div>
-  
-  <!--<Landing msg="Landing" />-->
 </template>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 #app {
-  font-family: 'Ubuntu', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: white;
-  background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: white;
+    background-color: black;
 }
 
 .nav-container {
@@ -103,14 +101,17 @@ html {
 
 a {
     color: white !important;
-    position: relative;
-    padding-bottom: 0.2rem;
     text-decoration: none !important;
     cursor: pointer;
 }
 
+.view-link {
+    position: relative;
+    padding-bottom: 0.2rem;
+}
+
 /* Fade in */
-a::after {
+.view-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -125,24 +126,22 @@ a::after {
     transition: opacity 300ms, transform 300ms;
 }
 
-a:hover {
+.view-link:hover {
     color: white;
 }
 
-a:hover::after,
-a:focus::after {
+.view-link:hover::after, .view-link:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
 
-.page-container {
-  padding-top: 8rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 6rem;
+.page-item-container {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 footer {
-  z-index: 2;
+    z-index: 2;
 }
 </style>

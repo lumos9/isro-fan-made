@@ -1,16 +1,16 @@
 <template>
     <div class="careers-container">
-        <div id="intro" class="shadow-2-strong page-container">
+        <div id="intro" class="shadow-2-strong page-item-container">
             <div id="page-title">
-                <h1>Want to build the future?</h1>
-                <h3>Join the team to make a difference</h3>
+                <div class="display-5">Want to build the future?</div>
+                <div class="display-6">Join the team to make a difference</div>
             </div>
             <div id="input-container">
                 <form class="row g-3 custom-align">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <input type="search" class="form-control form-control-lg" id="jobSearch" placeholder="Search Job Title" v-model="searchQuery">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <select id="location" class="form-select form-select-lg" title="Location" v-model="selected">
                             <option selected>All locations</option>
                             <option>Sriharikota, Andhra Pradesh</option>
@@ -20,11 +20,11 @@
                 </form>
             </div>
             <div class="result-container">
-                <div id="result-heading">
-                    <h4 v-if="searchQuery == ''">
-                        <div class="mb-3">Open positions</div>
-                        <div class="mb-3">at</div>
-                        <div class="mb-3">{{ selected }}</div>
+                <div id="result-heading" class="mb-4">
+                    <h4 v-if="searchQuery == ''" class="d-lg-flex justify-content-center flex-lg-wrap">
+                        <div class="px-1 mt-2">Open positions</div>
+                        <div class="px-1 mt-2">at</div>
+                        <div class="px-1 mt-2">{{ selected }}</div>
                     </h4>
                     <h4 v-else-if="filteredJobs.length == 0 && selected != 'All locations'">No open positions for '{{searchQuery}}' at {{ selected }}</h4>
                     <h4 v-else-if="filteredJobs.length == 0 && selected == 'All locations'">No open positions for '{{searchQuery}}'</h4>
@@ -33,22 +33,22 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Date Posted</th>
-                                <th scope="col">Job Title</th>
-                                <th scope="col">Location</th>
+                                <th class="col-md-auto">#</th>
+                                <th class="col-md-auto">Date Posted</th>
+                                <th class="col-md-auto">Job Title</th>
+                                <th class="col-md-auto">Location</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="job in filteredJobs" v-bind:key="job.id">
                                 <th scope="row">{{ job.id }}</th>
-                                <td>{{ job.datePosted }}</td>
-                                <td>
+                                <td class="col-md-auto">{{ job.datePosted }}</td>
+                                <td class="col-md-auto">
                                     <a v-bind:href="job.link" target="_blank">
                                         {{ job.title }}
                                     </a>
                                 </td>
-                                <td>{{ job.location }}</td>
+                                <td class="col-md-auto">{{ job.location }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -400,8 +400,8 @@ export default {
 }
 
 .result-container {
-    min-width: 70%;
-    margin-top: 6vh;
+    min-width: 60%;
+    margin-top: 4vh;
     overflow-wrap: break-word;
 }
 
