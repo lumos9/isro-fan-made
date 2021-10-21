@@ -3,6 +3,7 @@ import Landing from '../components/Landing.vue';
 import About from '../components/About.vue';
 import Missions from '../components/Missions.vue';
 import Careers from '../components/Careers.vue';
+import NotFound from '../components/404.vue';
 // 1. Define route components.
 // These can be imported from other files
 //const Home = { template: '<div>Home</div>' }
@@ -16,6 +17,7 @@ const routes = [
     { path: '/about', component: About },
     { path: '/missions', component: Missions },
     { path: '/careers', component: Careers },
+    { path: '/:pathMatch(.*)*', component: NotFound },
 ]
   
 // 3. Create the router instance and pass the `routes` option

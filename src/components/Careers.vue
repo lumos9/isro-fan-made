@@ -5,6 +5,8 @@
                 <div class="display-5">Want to build the future?</div>
                 <div class="display-6">Join the team to make a difference</div>
             </div>
+        </div>
+        <div class="page-item-container container">
             <div id="input-container">
                 <form class="row g-3 custom-align">
                     <div class="col-lg-6">
@@ -19,8 +21,9 @@
                     </div>
                 </form>
             </div>
-            <div class="result-container">
-                <div id="result-heading" class="mb-4">
+            <div class="result-container container">
+                <div class="row g-3 custom-align">
+                    <div id="result-heading" class="mb-4">
                     <h4 v-if="searchQuery == ''" class="d-lg-flex justify-content-center flex-lg-wrap">
                         <div class="px-1 mt-2">Open positions</div>
                         <div class="px-1 mt-2">at</div>
@@ -53,6 +56,8 @@
                         </tbody>
                     </table>
                 </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -372,19 +377,14 @@ export default {
 
 <style scoped>
 #intro {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-#page-title {
-    margin-top: 20vh;
-    margin-bottom: 4vh;
-}
-
 #input-container {
-    min-width: 80%;
     margin: 0 auto;
 }
 
@@ -400,7 +400,6 @@ export default {
 }
 
 .result-container {
-    min-width: 60%;
     margin-top: 4vh;
     overflow-wrap: break-word;
 }
