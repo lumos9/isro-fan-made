@@ -1,6 +1,6 @@
 <template>
     <div class="landing-container">
-        <div id="latestUpdate" class="intro bg-image shadow-2-strong page-item-container">
+        <!--<div id="latestUpdate" class="intro bg-image shadow-2-strong page-item-container">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
@@ -28,12 +28,12 @@
                                     <div v-else-if="seconds == 1">Second</div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>-->
                         <!--<div class="display-6">{{ formatedCountdown || "countdown over" }}</div>-->
-                    </div>
+                    <!--</div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div id="overview" class="intro bg-image shadow-2-strong page-item-container">
             <div class="container">
                 <div class="row">
@@ -52,7 +52,7 @@
                         <div id="india_flag"></div>
                         <div class="mt-4">
                             <router-link to="/missions">
-                                <button type="button" class="btn btn-outline-dark btn-lg explore-missions">Explore Missions</button>
+                                <button type="button" class="btn btn-outline-dark btn-lg explore-button">Explore Missions</button>
                             </router-link>
                         </div>
                     </div>
@@ -157,15 +157,5 @@ export default {
     background-image: url("../assets/india_flag.jpg");
     width: 5vh;
     height: 3.5vh;
-}
-
-.explore-missions {
-    color: white !important;
-    border-color: white !important;
-}
-
-.explore-missions:hover {
-    border-color: black !important;
-    background-color: black !important;
 }
 </style>

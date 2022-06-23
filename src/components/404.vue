@@ -5,8 +5,9 @@
                 <div class="row">
                     <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
                         <div class="mainTitle">
-                            <div class="display-1">OOPS!</div>
-                            <div class="display-2">404 PAGE NOT FOUND</div>
+                            <!---<div class="display-1">OOPS!</div>-->
+                            <div class="display-1">ERROR 404</div>
+                            <div class="display-2">PAGE NOT FOUND</div>
                             <div class="mt-4">
                             <router-link to="/">
                                 <button type="button" class="btn btn-outline-dark btn-lg back-to-home">Go Home</button>

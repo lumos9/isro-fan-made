@@ -149,6 +149,11 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-4">
+                <router-link to="/missions">
+                    <button type="button" class="btn btn-outline-dark btn-lg explore-button">Explore All Missions</button>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>

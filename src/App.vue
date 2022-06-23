@@ -9,14 +9,14 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <router-link to="/" class="navbar-brand">
-                        <!--<img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
+                        <img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                         ISRO
                     </router-link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav flex-fill justify-content-center">
+                        <ul class="nav navbar-nav flex-fill justify-content-end">
                             <li class="nav-item">
                                 <router-link to="/" class="nav-link active px-4 view-link">
                                     <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</div>
@@ -38,13 +38,13 @@
                                 </router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link to="/contact" class="nav-link px-4 view-link">
-                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact Us</div>
+                                <router-link to="/newsroom" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Newsroom</div>
                                 </router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link to="/updates" class="nav-link px-4 view-link">
-                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Updates</div>
+                                <router-link to="/contact" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</div>
                                 </router-link>
                             </li>
                         </ul>
@@ -105,12 +105,12 @@ a {
     cursor: pointer;
 }
 
+/*
 .view-link {
     position: relative;
     padding-bottom: 0.2rem;
 }
 
-/* Fade in */
 .view-link::after {
     content: '';
     position: absolute;
@@ -123,16 +123,65 @@ a {
     height: 0.1em;
     background-color: white;
     opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-}
-
-.view-link:hover {
-    color: white;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .view-link:hover::after, .view-link:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
+}
+
+.view-link:hover {
+    color: white;
+}*/
+
+.view-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+.view-link:before, .view-link:after {
+  content: '';
+  position: absolute;
+  transition: transform .2s ease-out;
+}
+
+/* Fade in
+.view-link::after {
+    content: '';
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+} */
+
+.view-link:before, .view-link:after {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: white;
+}
+.view-link:before {
+  border-width: 2px 0 2px 0;
+  transform: scaleX(0);
+}
+.view-link:after {
+  border-width: 0 2px 0 2px;
+  transform: scaleY(0);
+}
+.view-link:hover:before, .view-link:hover:after {
+  transform: scale(1, 1);
+}
+
+.explore-button {
+    color: white !important;
+    border-color: white !important;
+}
+
+.explore-button:hover {
+    border-color: black !important;
+    background-color: black !important;
 }
 
 .page-item-container {
@@ -143,5 +192,26 @@ a {
 
 footer {
     z-index: 2;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(241, 230, 230);
 }
 </style>

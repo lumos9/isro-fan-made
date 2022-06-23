@@ -14,8 +14,9 @@
 </template>
 
 <script>
+import Missions2013 from "./missions/Missions2013.vue";
 import Missions2019 from "./missions/Missions2019.vue";
-import Missions2021 from "./missions/Missions2021.vue";
+
 import MissionsFuture from "./missions/MissionsFuture.vue";
 
 export default {
@@ -28,18 +29,18 @@ export default {
                     id: 'launch3',
                     year: 'Future'
                 },
-                {     
-                    name: 'Chandrayan - 2',
-                    id: 'launch2',
-                    date: '22nd July 2021',
-                    year: '2021'
-                },
                 { 
                     name: 'Chandrayan - 1',
                     id: 'launch1',
                     date: '22nd September 2019',
                     year: '2019'
-                }
+                },
+                {     
+                    name: 'Chandrayan - 2',
+                    id: 'launch2',
+                    date: '22nd July 2021',
+                    year: '2013'
+                },
             ]
         }
     },
@@ -49,8 +50,8 @@ export default {
         }
     },
     components: {
+        Missions2013,
         Missions2019,
-        Missions2021,
         MissionsFuture
     }
 };
@@ -99,5 +100,6 @@ export default {
     padding-left: 5vw;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 </style>
