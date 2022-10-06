@@ -3,6 +3,7 @@ import Landing from '../components/Landing.vue';
 import About from '../components/About.vue';
 import Missions from '../components/Missions.vue';
 import Careers from '../components/Careers.vue';
+import Newsroom from '../components/Newsroom.vue';
 import NotFound from '../components/404.vue';
 // 1. Define route components.
 // These can be imported from other files
@@ -17,6 +18,10 @@ const routes = [
     { path: '/about', component: About },
     { path: '/missions', component: Missions },
     { path: '/careers', component: Careers },
+    { path: '/newsroom', component: Newsroom },
+    { path: '/news', component: Newsroom },
+    { path: '/press', component: Newsroom },
+    { path: '/updates', component: Newsroom },
     { path: '/:pathMatch(.*)*', component: NotFound },
 ]
   

@@ -396,6 +396,10 @@ export default {
     justify-content: center;
 }
 
+#jobSearchContainer {
+    min-height: -webkit-fill-available;
+}
+
 #jobSearch, #location {
     background-color: black;
     color: white;
