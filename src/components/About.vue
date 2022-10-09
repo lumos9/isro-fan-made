@@ -6,7 +6,7 @@
                 <div class="display-6">To the Moon, Mars and beyond..</div>
             </div>
             <div>
-                <div>
+                <div class="lead">
                     India is the only nation to reach Mars in the first attempt
                 </div>
             </div>

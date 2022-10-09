@@ -76,8 +76,16 @@
             <div class="social-container">
                 <div class="display-5 my-5">Follow Us</div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'twitter']" /></div>
+                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'instagram']" /></div>
+                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'youtube']"/></div>
+                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'linkedin']" /></div>
+                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'facebook']" /></div>
+                            </div>
                         </div>
+                        
                     </div>
             </div>
         </div>
