@@ -4,8 +4,8 @@
             <div id="page-title">
                 <div class="display-5">Want to build the future?</div>
                 <div class="display-6">Join the team to make a difference</div>
-                 <div class="mt-4">
-                    <a href="#jobSearchContainer" class="btn btn-outline-light btn-lg explore-button" role="button">Explore Jobs</a>
+                <div class="mt-4">
+                    <a href="#jobSearchContainer" class="btn btn-outline-light btn-lg explore-button-opp" role="button">Explore Jobs</a>
                 </div>
             </div>
         </div>

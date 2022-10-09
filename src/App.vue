@@ -9,10 +9,13 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <router-link to="/" class="navbar-brand">
-                        <img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                        <img src="./assets/isro_logo.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
                         ISRO
                     </router-link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,7 +59,8 @@
             <router-view />
         </div>
         <footer class="py-4">
-            <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ISRO © {{ new Date().getFullYear() }}</div>
+            <div><img src="./assets/isro_logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                ISRO © {{ new Date().getFullYear() }}</div>
         </footer>
     </div>
 </template>
@@ -90,7 +94,7 @@ html {
 }
 
 .navbar {
-    background: linear-gradient(to top, rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%) !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) !important;
     padding: 1.5rem !important;
     font-weight: 500;
 }
@@ -136,15 +140,17 @@ a {
 }*/
 
 .view-link {
-  position: relative;
-  color: inherit;
-  text-decoration: none;
-  line-height: 24px;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
 }
-.view-link:before, .view-link:after {
-  content: '';
-  position: absolute;
-  transition: transform .2s ease-out;
+
+.view-link:before,
+.view-link:after {
+    content: '';
+    position: absolute;
+    transition: transform .2s ease-out;
 }
 
 /* Fade in
@@ -154,27 +160,34 @@ a {
     transition: transform 0.2s ease-in-out;
 } */
 
-.view-link:before, .view-link:after {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-color: white;
-}
-.view-link:before {
-  border-width: 2px 0 2px 0;
-  transform: scaleX(0);
-}
+.view-link:before,
 .view-link:after {
-  border-width: 0 2px 0 2px;
-  transform: scaleY(0);
-}
-.view-link:hover:before, .view-link:hover:after {
-  transform: scale(1, 1);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
 }
 
-.explore-button {
+.view-link:before {
+    border-width: 2px 0 2px 0;
+    transform: scaleX(0);
+}
+
+.view-link:after {
+    border-width: 0 2px 0 2px;
+    transform: scaleY(0);
+}
+
+.view-link:hover:before,
+.view-link:hover:after {
+    transform: scale(1, 1);
+}
+
+.explore-button,
+.explore-button-opp {
     color: white !important;
     border-color: white !important;
 }
@@ -182,6 +195,13 @@ a {
 .explore-button:hover {
     border-color: black !important;
     background-color: black !important;
+}
+
+
+.explore-button-opp:hover {
+    border-color: white !important;
+    background-color: white !important;
+    color: black !important;
 }
 
 .page-item-container {
@@ -197,11 +217,11 @@ footer {
 ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
     background: rgb(0, 0, 0);
 }
- 
+
 ::-webkit-scrollbar-thumb {
     background: rgb(136, 136, 136);
     border-radius: 8px;

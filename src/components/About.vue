@@ -12,47 +12,43 @@
             </div>
         </div>
         <div class="container page-item-container">
-            <div class="row">
+            <div class="row m-5">
                 <div class="col-lg-12">
-                    <div class="m-3">
+                    <div class="mb-5">
                         <h1>How It Started</h1>
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 p-3 align-middle">
-                                <img src="../assets/early.jpeg" class="img-fluid rounded" />
-                                <div class="p-3 fst-italic fw-lighter">The photograph of the rocket nose cone on a bicycle taken by Henri Cartier-Bresson soon went viral in the media. On the right: engineer, CR Sathya. His assistant, Velappan Nair, is taking care of the nose cone.</div>
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <img src="../assets/early.jpeg" class="img-fluid rounded" />
+                                    <div class="fst-italic fw-lighter">(Credits: Henri Cartier-Bresson)</div>
+                                    <div class="fst-italic fw-lighter mb-3">On the right: engineer, CR Sathya. His assistant, Velappan Nair, transporting one of the very first nose cones to the lab.</div>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="p-3 fw-light">
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                <div class="fw-light about-overview">
                                     <p>
                                         India decided to go to space when Indian National Committee for Space Research (INCOSPAR) was set up by the Government of India in 1962.
                                         With the visionary Dr. Vikram Sarabhai at its helm, INCOSPAR set up the Thumba Equatorial Rocket Launching Station (TERLS) in Thiruvananthapuram for upper atmospheric research.
                                     </p>
 
                                     <p>
-                                        Indian Space Research Organisation, formed in 1969, superseded the erstwhile INCOSPAR.
-                                        Vikram Sarabhai, having identified the role and importance of space technology in a Nation's development, provided ISRO the necessary direction to function as an agent of development.
-                                        ISRO then embarked on its mission to provide the Nation space based services and to develop the technologies to achieve the same independently.
+                                        Indian Space Research Organisation (ISRO), formed in 1969, superseded the erstwhile INCOSPAR.
+                                        Vikram Sarabhai, having identified the role and importance of space technology in a nation's development, provided ISRO the necessary direction to function as an agent of development.
+                                        ISRO then embarked on its mission to provide the nation, space based services and to develop the technologies to achieve the same independently.
                                     </p>
 
                                     <p>
-                                        Throughout the years, ISRO has upheld its mission of bringing space to the service of the common man, to the service of the Nation.
+                                        Throughout the years, ISRO has upheld its mission of bringing space to the service of the common man, to the service of the nation.
                                         In the process, it has become one of the six largest space agencies in the world. ISRO maintains one of the largest fleet of communication satellites (INSAT) and remote sensing (IRS) satellites, that cater to the ever growing demand for fast and reliable communication and earth observation respectively.
-                                        ISRO develops and delivers application specific satellite products and tools to the Nation: broadcasts, communications, weather forecasts, disaster management tools, Geographic Information Systems, cartography, navigation, telemedicine, dedicated distance education satellites being some of them.
+                                        ISRO develops and delivers application specific satellite products and tools to the nation: broadcasts, communications, weather forecasts, disaster management tools, Geographic Information Systems, cartography, navigation, telemedicine, dedicated distance education satellites being some of them. With its achievements in the field of space sciences, ISRO has become of the most effecient space-based organizations on planet Earth
                                     </p>
-
-                                    <p>
-                                        To achieve complete self reliance in terms of these applications, it was essential to develop cost efficient and reliable launch systems, which took shape in the form of the Polar Satellite Launch Vehicle (PSLV).
-                                        The famed PSLV went on to become a favoured carrier for satellites of various countries due to its reliability and cost efficiency, promoting unprecedented international collaboration.
-                                        The Geosynchronous Satellite Launch Vehicle (GSLV) was developed keeping in mind the heavier and more demanding Geosynchronous communication satellites.
-                                    </p>
-
-                                    <p>
-                                        Apart from technological capability, ISRO has also contributed to science and science education in the country.
-                                        Various dedicated research centres and autonomous institutions for remote sensing, astronomy and astrophysics, atmospheric sciences and space sciences in general function under the aegis of Department of Space.
-                                        ISRO's own Lunar and interplanetary missions along with other scientific projects encourage and promote science education, apart from providing valuable data to the scientific community which in turn enriches science.
-                                    </p>
+                                    <div class="m-5">
+                                        <router-link to="/timeline">
+                                            <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Explore Timeline</button>
+                                        </router-link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -193,5 +189,11 @@
 
 .w-title {
     color: white;
+}
+
+.about-overview p {
+    margin: 1;
+    text-indent: 2rem;
+    text-align: justify;
 }
 </style>
