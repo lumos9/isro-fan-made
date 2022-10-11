@@ -60,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="m-3">
+                        <div class="my-5">
                             <h1>How It's Going</h1>
                         </div>
                         <div class="mainTitle">

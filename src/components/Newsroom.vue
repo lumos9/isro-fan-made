@@ -2,7 +2,7 @@
     <div class="news-container">
         <div id="intro" class="shadow-2-strong page-item-container">
             <div id="page-title">
-                <div class="display-5">Press Releases</div>
+                <div class="display-5">News + Media</div>
             </div>
         </div>
         <div id="news-list" class="page-item-container container">
