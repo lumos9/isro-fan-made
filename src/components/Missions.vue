@@ -11,7 +11,7 @@
                             <div class="col-lg-6">
                                 <div :style="{backgroundImage: `url(${mission.image})`}" class="mission-image"></div>
                             </div>
-                            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center text-start">
                                 <div>
                                     <div class="lead my-5">{{ mission.date }}</div>
                                     <div class="fw-light about-overview">
@@ -22,7 +22,7 @@
                                         </p>
                                         
                                     </div>
-                                    <div class="m-5">
+                                    <div class="my-5">
                                         <router-link to="/timeline">
                                             <button type="button" class="btn btn-outline-dark btn-lg explore-button-opp">Learn More</button>
                                         </router-link>
