@@ -3,7 +3,7 @@
         <div class="page-item-container container">
             <div class="write-us-container">
                 <div class="display-5 my-5">Write to Us</div>
-                    <div class="">
+                    <div>
                         <div>
                             <div class="row mb-3">
                                 <div class="col">

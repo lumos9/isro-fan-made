@@ -1,8 +1,3 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-</script>
-
 <template>
     <div class="app-container">
         <div class="nav-container">
@@ -65,11 +60,15 @@
     </div>
 </template>
 
+<script setup>
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 #app {

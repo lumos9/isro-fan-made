@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="container page-item-container">
+        <div class="container page-item-container min-vh-100">
             <div class="row m-5">
                 <div class="col-lg-12">
                     <div class="mb-5">
@@ -66,74 +66,80 @@
                         <div class="mainTitle">
                             <div class="mb-3">
                                 <div class="text-center display-2">
-                                    <vue3-autocounter
+                                    <!-- <vue3-autocounter
                                         ref='counter'
                                         :startAmount='0'
                                         :endAmount='550' 
                                         :duration='1'
                                         separator=','
-                                        :autoinit='true'/>
+                                        :autoinit='true'/> -->
+                                        <div>550</div>
                                 </div>
                                 <div>Total Missions</div>
                             </div>
                             <ul class="list-inline">
                                 <li class="list-inline-item px-5 mb-3">
                                     <div class="text-center display-2">
-                                        <vue3-autocounter
+                                        <!-- <vue3-autocounter
                                             ref='counter'
                                             :startAmount='0'
                                             :endAmount='112' 
                                             :duration='1'
                                             separator=','
-                                            :autoinit='true'/>
+                                            :autoinit='true'/> -->
+                                            <div>116</div>
                                     </div>
                                     <div>Spacecraft Missions</div>
                                 </li>
                                 <li class="list-inline-item px-5 mb-3">
                                     <div class="text-center display-2">
-                                        <vue3-autocounter
+                                        <!-- <vue3-autocounter
                                             ref='counter'
                                             :startAmount='0'
                                             :endAmount='82' 
                                             :duration='1'
                                             separator=','
-                                            :autoinit='true'/>
+                                            :autoinit='true'/> -->
+                                            <div>84</div>
                                     </div>
                                     <div>Launch Missions</div>
                                 </li>
                                 <li class="list-inline-item px-5 mb-3">
                                     <div class="text-center display-2">
-                                        <vue3-autocounter
+                                        <!-- <vue3-autocounter
                                             ref='counter'
                                             :startAmount='0'
                                             :endAmount='12' 
                                             :duration='1'
                                             separator=','
-                                            :autoinit='true'/>
+                                            :autoinit='true'/> -->
+                                            <div>13</div>
                                     </div>
                                     <div>Student Missions</div>
                                 </li>
                                 <li class="list-inline-item px-5 mb-3">
                                     <div class="text-center display-2">
-                                        <vue3-autocounter
+                                        <!-- <vue3-autocounter
                                             ref='counter'
                                             :startAmount='0'
                                             :endAmount='2' 
                                             :duration='1'
                                             separator=','
-                                            :autoinit='true'/>
+                                            :autoinit='true'/> -->
+                                            <div>2</div>
                                     </div>
                                     <div>Re-entry Missions</div>
                                 </li>
                                 <li class="list-inline-item px-5 mb-3">
                                     <div class="text-center display-2">
-                                        <vue3-autocounter
+                                        <!-- <vue3-autocounter
                                             ref='counter'
                                             :startAmount='0'
                                             :endAmount='342' 
                                             :duration='1'
                                             separator=','
-                                            :autoinit='true'/>
+                                            :autoinit='true'/> -->
+                                            <div>345</div>
                                     </div>
                                     <div>International Missions</div>
                                 </li>
