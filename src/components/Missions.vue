@@ -20,11 +20,32 @@
                                     <p>
                                         {{ mission.overview }}
                                     </p>
-                                    
+                                </div>
+                                <div class="mb-5">
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Learn More ></button>
+                                    </router-link>
                                 </div>
                                 <div class="my-5">
                                     <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Learn More ></button>
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Launch Video</button>
+                                    </router-link>
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Gallery</button>
+                                    </router-link>
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Timeline</button>
+                                    </router-link>
+                                </div>
+                                <div class="my-3">
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Launch Vehicle</button>
+                                    </router-link>
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Payload</button>
+                                    </router-link>
+                                    <router-link to="/timeline">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Science in this Mission</button>
                                     </router-link>
                                 </div>
                             </div>

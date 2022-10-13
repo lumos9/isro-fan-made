@@ -39,7 +39,7 @@
                                 <label for="floatingSubject">Subject</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
+                                <textarea class="form-control pt-5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
                                 <label for="floatingTextarea2">Question / Feedback</label>
                             </div>
                             <div>
