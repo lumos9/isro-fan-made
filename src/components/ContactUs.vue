@@ -67,8 +67,8 @@
                             </div>
                             <div class="mb-4">
                                 <div class="contact-heading mb-2">Contact Info</div>
-                                <div><font-awesome-icon icon="envelope" />icrb@isro.gov.in</div>
-                                <div><font-awesome-icon icon="phone" />+91-80-22172465</div>
+                                <div><!-- <font-awesome-icon icon="envelope" /> -->icrb@isro.gov.in</div>
+                                <div><!-- <font-awesome-icon icon="phone" /> -->+91-80-22172465</div>
                             </div>
                         </div>
                     </div>
