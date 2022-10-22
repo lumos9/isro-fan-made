@@ -209,6 +209,16 @@ a {
     padding-right: 3rem;
 }
 
+.full-screen-div {
+    min-height: 100vh;
+}
+
+.youtube-video {
+    min-width: 60vw;
+    min-height: 50vh;
+
+}
+
 footer {
     z-index: 2;
 }

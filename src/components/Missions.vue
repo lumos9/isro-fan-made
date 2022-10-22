@@ -21,31 +21,31 @@
                                         {{ mission.overview }}
                                     </p>
                                 </div>
-                                <div class="mb-5">
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Learn More ></button>
+                                <div class="mb-2">
+                                    <router-link :to="'/missions/' + mission.id">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Learn More<font-awesome-icon class="ms-2" :icon="['fas', 'chevron-right']" /></button>
                                     </router-link>
                                 </div>
-                                <div class="my-5">
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Launch Video</button>
+                                <div class="my-2">
+                                    <router-link :to="'/missions/' + mission.id + '#launchvideo'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'play']" />Launch Video</button>
                                     </router-link>
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Gallery</button>
+                                    <router-link :to="'/missions/' + mission.id + '#gallery'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'images']" />Gallery</button>
                                     </router-link>
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Timeline</button>
+                                    <router-link :to="'/missions/' + mission.id + '#timeline'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'bars-staggered']" />Timeline</button>
                                     </router-link>
                                 </div>
-                                <div class="my-3">
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Launch Vehicle</button>
+                                <div class="my-2">
+                                    <router-link :to="'/missions/' + mission.id + '#launchvehicle'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'rocket']" />Launch Vehicle</button>
                                     </router-link>
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Payload</button>
+                                    <router-link :to="'/missions/' + mission.id + '#payload'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'weight-hanging']" />Payload</button>
                                     </router-link>
-                                    <router-link to="/timeline">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2">Science in this Mission</button>
+                                    <router-link :to="'/missions/' + mission.id + '#science'">
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'microscope']" />Science in this Mission</button>
                                     </router-link>
                                 </div>
                             </div>
@@ -63,10 +63,18 @@ export default {
     data() {
         return {
             missionsList: [
+            {     
+                    name: 'LVM3 M2 / OneWeb India - 1',
+                    id: 'LVM3-M2-OneWeb',
+                    date: '23rd October, 2022 - 00:07 IST',
+                    year: '2022',
+                    image: 'images/lvm3-m2.jpg',
+                    overview: 'The LVM3-M2 mission is a dedicated commercial mission for a foreign customer OneWeb, through NSIL. It is the first multi-satellite mission with 36 OneWeb Satellites to the LEO as the heaviest payload mass of 5,796 KG of LVM3 till date'
+                },
                 {     
                     name: 'EOS - 2',
                     id: 'launch - EOS - 2',
-                    date: '7th August 2022',
+                    date: '7th August, 2022',
                     year: '2022',
                     image: 'images/eos-2.jpg',
                     overview: 'EOS-02 is an earth observation satellite designed and realised by ISRO. This microsat series satellite offers advanced optical remote sensing operating in infra-red band with high spatial resolution. The bus configuration is derived from IMS-1 bus'
@@ -98,7 +106,7 @@ export default {
                 {     
                     name: 'Chandrayan - 2',
                     id: 'launch2',
-                    date: '22nd July 2021',
+                    date: '22nd July, 2021',
                     year: '2013',
                     image: 'images/chandrayan-2.jpg',
                     overview: 'Chandrayaan-2 mission is a highly complex mission, which represents a significant technological leap compared to the previous missions of ISRO. It comprised an Orbiter, Lander and Rover to explore the unexplored South Pole of the Moon. The mission is designed to expand the lunar scientific knowledge through detailed study of topography, seismography, mineral identification and distribution, surface chemical composition, thermo-physical characteristics of top soil and composition of the tenuous lunar atmosphere, leading to a new understanding of the origin and evolution of the Moon'
@@ -106,7 +114,7 @@ export default {
                 { 
                     name: 'Chandrayan - 1',
                     id: 'launch1',
-                    date: '22nd October 2008',
+                    date: '22nd October, 2008',
                     year: '2008',
                     image: 'images/chandrayan-1.jpg',
                     overview: "Chandrayaan-1, India's first mission to Moon, was launched successfully on October 22, 2008 from SDSC SHAR, Sriharikota. The spacecraft was orbiting around the Moon at a height of 100 km from the lunar surface for chemical, mineralogical and photo-geologic mapping of the Moon. The spacecraft carried 11 scientific instruments built in India, USA, UK, Germany, Sweden and Bulgaria"

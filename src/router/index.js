@@ -4,6 +4,7 @@ import About from '../components/About.vue';
 import Careers from '../components/Careers.vue';
 import Contact from '../components/ContactUs.vue';
 import Missions from '../components/Missions.vue';
+import LVM3M2OneWeb from '../components/missions/LVM3-M2-OneWeb.vue';
 import Newsroom from '../components/Newsroom.vue';
 import NotFound from '../components/404.vue';
 import Timeline from '../components/Timeline.vue';
@@ -27,6 +28,7 @@ const routes = [
     { path: '/press', component: Newsroom },
     { path: '/timeline', component: Timeline },
     { path: '/updates', component: Newsroom },
+    { path: '/missions/lvm3-m2-oneweb', component: LVM3M2OneWeb},
     { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 // 3. Create the router instance and pass the `routes` option
