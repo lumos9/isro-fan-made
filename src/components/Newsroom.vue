@@ -1,7 +1,7 @@
 <template>
     <div class="news-container">
         <div>
-            <div class="row container-xxl m-auto" v-for="(newsItem, index) in reverseList.slice(0, 1)" v-bind:key="newsItem.id">
+            <div class="row container-xxl m-auto" v-for="newsItem in reverseList.slice(0, 1)" v-bind:key="newsItem.id">
                 <div class="page-item-container px-0">
                     <div class="fs-2 mb-4 text-start">Latest News</div>
                     <div id="intro" class="shadow-2-strong">
@@ -22,7 +22,7 @@
 
             <div class="row container-xxl m-auto">
                 <div class="fs-2 my-4 text-start p-0" v-if="reverseList.length > 1">Other Articles</div>
-                <div v-for="(newsItem, index) in reverseList.slice(1)" v-bind:key="newsItem.id" class="col-lg-6 p-1">
+                <div v-for="newsItem in reverseList.slice(1)" v-bind:key="newsItem.id" class="col-lg-6 p-1">
                     <div>
                         <div :style="{backgroundImage: `url(${newsItem.image})`}" id="news-item-image"></div>
                         <div class="my-5 text-start">
