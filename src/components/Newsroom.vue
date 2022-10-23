@@ -1,8 +1,8 @@
 <template>
     <div class="news-container">
-        <div class="row container-xxl m-auto">
-            <div v-for="(newsItem, index) in reverseList" v-bind:key="newsItem.id">
-                <div class="page-item-container px-0" v-if="index == 0">
+        <div>
+            <div class="row container-xxl m-auto" v-for="(newsItem, index) in reverseList.slice(0, 1)" v-bind:key="newsItem.id">
+                <div class="page-item-container px-0">
                     <div class="fs-2 mb-4 text-start">Latest News</div>
                     <div id="intro" class="shadow-2-strong">
                         <div class="p-4">
@@ -16,21 +16,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fs-2 my-4 text-start" v-if="reverseList.length > 1">Other Articles</div>
+                    
                 </div>
-                <div class="col-6" v-else>
-                    <div :style="{backgroundImage: `url(${newsItem.image})`}" id="news-item-image"></div>
-                    <div class="my-5 text-start">
-                        <div class="mb-4">
-                            <!---<div>{{ newsItem.date }} - {{ newsItem.time }}</div>-->
-                            <div>Published on {{ newsItem.date }}</div>
-                            <div class="fs-3">{{ newsItem.title }}</div>
-                        </div>
-                        <div class="mb-4">{{ newsItem.overview }}</div>
-                        <div>
-                            <router-link to="/missions">
-                                <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Article</button>
-                            </router-link>
+            </div>
+
+            <div class="row container-xxl m-auto">
+                <div class="fs-2 my-4 text-start p-0" v-if="reverseList.length > 1">Other Articles</div>
+                <div v-for="(newsItem, index) in reverseList.slice(1)" v-bind:key="newsItem.id" class="col-lg-6 p-1">
+                    <div>
+                        <div :style="{backgroundImage: `url(${newsItem.image})`}" id="news-item-image"></div>
+                        <div class="my-5 text-start">
+                            <div class="mb-4">
+                                <!---<div>{{ newsItem.date }} - {{ newsItem.time }}</div>-->
+                                <div>Published on {{ newsItem.date }}</div>
+                                <div class="fs-3">{{ newsItem.title }}</div>
+                            </div>
+                            <div class="mb-4">{{ newsItem.overview }}</div>
+                            <div>
+                                <router-link to="/missions">
+                                    <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Article</button>
+                                </router-link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,6 +139,5 @@ export default {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-radius: 30px;
 }
 </style>
