@@ -4,6 +4,7 @@ import About from '../components/About.vue';
 import Careers from '../components/Careers.vue';
 import Contact from '../components/ContactUs.vue';
 import Missions from '../components/Missions.vue';
+import Dynamic from '../components/missions/Dynamic.vue';
 import LVM3M2OneWeb from '../components/missions/LVM3-M2-OneWeb.vue';
 import Newsroom from '../components/Newsroom.vue';
 import NotFound from '../components/404.vue';
@@ -23,6 +24,7 @@ const routes = [
     { path: '/contact', component: Contact },
     { path: '/contactus', component: Contact },
     { path: '/missions', component: Missions },
+    //{ path: '/missions/:dynamic', component: Dynamic},
     { path: '/newsroom', component: Newsroom },
     { path: '/news', component: Newsroom },
     { path: '/press', component: Newsroom },

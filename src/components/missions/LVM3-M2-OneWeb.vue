@@ -1,18 +1,17 @@
 <template>
     <div>
         <div id="intro" class="shadow-2-strong page-item-container">
-            <div class="mainTitle">
+            <!---<video autoplay muted loop id="lv-m3">
+                <source src="../../assets/missions/lvm3-m2/new_video.mp4" type="video/mp4">
+            </video>-->
+            <div>
                 <div class="display-4 mb-4">LVM3 M2 / OneWeb India - 1</div>
-                <div class="fs-3 mb-4"><font-awesome-icon class="me-3" :icon="['fas', 'location-dot']" />Satish Dhawan Space Centre</div>
-                <div class="fs-3 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />23rd October 2022, 00:07 IST</div>
-                <div class="fs-3 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />22nd October 2022, 18:37 UTC</div>
+                <div class="lead">ISRO launches 36 OneWeb satellites to orbit on 23rd October 2022 at 00:07 IST</div>
                 <div>
-                    <div class="row my-4" v-if="days > 0 || hours > 0 || minutes > 0 || seconds > 0">
+                    <div class="row my-4" v-if="days >= 0 && (hours > 0 || minutes > 0 || seconds > 0)">
                         <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
-                            <div class="mainTitle">
-                                <div class="fs-1 my-4">
-                                    <font-awesome-icon class="me-3" :icon="['fas', 'rocket']" />Launch Countdown
-                                </div>
+                            <div>
+                                <div class="fs-1 my-4"><font-awesome-icon class="me-3" :icon="['fas', 'rocket']" />Launch Countdown</div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item px-5 mb-3 timer">
                                         <div class="text-center display-3">{{ days }}</div>
@@ -47,11 +46,11 @@
                 </div>
             </div>
         </div>
-        <div class="page-item-container">
-            <div class="full-screen-div container d-flex align-items-center justify-content-center">
-                <div>
+        <div>
+            <div id="overview" class="full-screen-div d-flex align-items-center justify-content-center page-item-container">
+                <div class="overview-content">
                     <div class="display-5 mb-4">Overview</div>
-                    <div class="lead">
+                    <div id="overview-text" class="container lead">
                         <p>
                             LVM3-M2 is the dedicated commercial satellite mission of NewSpace India Limited
                             (NSIL), a Central Public Sector Enterprise (CPSE) under Department of Space,
@@ -60,12 +59,15 @@
                             This mission is being undertaken as part of the commercial arrangement entered into
                             between NSIL and M/s. Network Access Associates Ltd. (M/s. OneWeb Ltd.),
                             a UK based company.
-                            As part of this mission 36 OneWeb Gen-1 satellites, meant for global connectivity
+                            As part of this mission, 36 OneWeb Gen-1 satellites, meant for global connectivity
                             needs, will be launched from the Second Launch Pad (SLP) of SDSC-SHAR into circular
                             low earth orbit of 601 km altitude with an inclination of 87.4°.
                             This mission is the 5th flight of LVM3
                         </p>
                     </div>
+                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['fas', 'location-dot']" />Satish Dhawan Space Centre, Sriharikota</div>
+                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />22nd October 2022, 18:37 UTC</div>
+                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />23rd October 2022, 00:07 IST</div>
                 </div>
                 
             </div>
@@ -97,7 +99,7 @@
                     <div class="display-5 mb-5">Science</div>
                 </div>
             </div>-->
-            <div id="gallery" class="full-screen-div d-flex align-items-center justify-content-center">
+            <div id="gallery" class="container full-screen-div d-flex align-items-center justify-content-center">
                 <div>
                     <div class="display-5 mb-5">Gallery</div>
                     <!-- Gallery -->
@@ -258,5 +260,27 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+}
+
+#overview {
+    background: no-repeat center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url('../../assets/missions/lvm3-m2/overview.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overview-content {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 25px;
+
+}
+
+#overview-text p {
+    margin: 1;
+    text-indent: 2rem;
+    text-align: justify;
 }
 </style>

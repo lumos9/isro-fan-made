@@ -1,52 +1,40 @@
 <template>
     <div class="news-container">
-        <div id="intro" class="shadow-2-strong page-item-container">
-            <div id="page-title">
-                <div class="display-5">News + Media</div>
-            </div>
-        </div>
-        <div id="news-list" class="page-item-container container">
-            <div class="container" v-for="(newsItem, index) in reverseList" v-bind:key="newsItem.id">
-                <div class="row mb-5" v-if="index == 0">
-                    <div class="col-lg-6 mb-4">
-                        <div :style="{backgroundImage: `url(${newsItem.image})`}" id="latest-news-item-image"></div>
-                    </div>
-                    <div class="col-lg-6 d-flex align-items-center justify-content-center text-start px-4 mb-4">
-                        <div>
-                            <div class="mb-4">
-                                <div>{{ newsItem.date }} - {{ newsItem.time }}</div>
-                                <div class="fs-3">{{ newsItem.title }}</div>
-                            </div>
-                            <div class="mb-4 lead">{{ newsItem.overview }}</div>
-                            <div>
+        <div class="row container-xxl m-auto">
+            <div v-for="(newsItem, index) in reverseList" v-bind:key="newsItem.id">
+                <div class="page-item-container px-0" v-if="index == 0">
+                    <div class="fs-2 mb-4 text-start">Latest News</div>
+                    <div id="intro" class="shadow-2-strong">
+                        <div class="p-4">
+                            <div calss="fs-3">Published on {{ newsItem.date }}</div>
+                            <div class="fs-1 mb-4">{{ newsItem.title }}</div>
+                            <div class="lead">{{ newsItem.overview }}</div>
+                            <div class="mt-4">
                                 <router-link to="/missions">
-                                    <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Article</button>
+                                    <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Full Article</button>
                                 </router-link>
                             </div>
                         </div>
                     </div>
+                    <div class="fs-2 my-4 text-start" v-if="reverseList.length > 1">Other Articles</div>
                 </div>
-                <div v-else class="row mb-5">
-                    <div class="col-lg-6 mb-4">
-                        <div :style="{backgroundImage: `url(${newsItem.image})`}" id="latest-news-item-image"></div>
-                    </div>
-                    <div class="col-lg-6 d-flex align-items-center justify-content-center text-start px-4 mb-4">
+                <div class="col-6" v-else>
+                    <div :style="{backgroundImage: `url(${newsItem.image})`}" id="news-item-image"></div>
+                    <div class="my-5 text-start">
+                        <div class="mb-4">
+                            <!---<div>{{ newsItem.date }} - {{ newsItem.time }}</div>-->
+                            <div>Published on {{ newsItem.date }}</div>
+                            <div class="fs-3">{{ newsItem.title }}</div>
+                        </div>
+                        <div class="mb-4">{{ newsItem.overview }}</div>
                         <div>
-                            <div class="mb-4">
-                                <div>{{ newsItem.date }} - {{ newsItem.time }}</div>
-                                <div class="fs-3">{{ newsItem.title }}</div>
-                            </div>
-                            <div class="mb-4">{{ newsItem.overview }}</div>
-                            <div>
-                                <router-link to="/missions">
-                                    <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Article</button>
-                                </router-link>
-                            </div>
+                            <router-link to="/missions">
+                                <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Read Article</button>
+                            </router-link>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </template>
@@ -102,6 +90,15 @@ export default {
                     'images/isro.jpg',
                     'Launched on September 24, 2014, Mars Orbiter Mission (MOM) comes to end after 8 years of exceptional science of planet Mars',
                     'https://www.google.com'
+                ),
+                new NewsItem(
+                    2,
+                    '20th October 2022',
+                    '00:07 AM IST',
+                    'ISRO launches OneWeb Satellites',
+                    'images/lvm3-m2.jpg',
+                    'ISRO scheduled to launch 36 OneWeb Satellites on 23rd October 2022 at 00:07 IST',
+                    'https://www.google.com'
                 )
             ]
         }
@@ -115,31 +112,27 @@ export default {
 </script>
 
 <style scoped>
-    #intro {
-    height: 100vh;
+#intro {
+    background: no-repeat center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url("../assets/news/intro.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-    #news-list {
-        min-height: -webkit-fill-available;
-        width: 80%;
-        margin: auto;
-    }
-
-    .latest-news-item, .news-item {
-        padding: 1rem;
-    }
-
-    #latest-news-item-image {
-        height: 400px;
-        background: no-repeat center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        border-radius: 30px;
-    }
+#news-item-image {
+    height: 400px;
+    background: no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 30px;
+}
 </style>

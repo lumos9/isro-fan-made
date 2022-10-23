@@ -22,31 +22,31 @@
                                     </p>
                                 </div>
                                 <div class="mb-2">
-                                    <router-link :to="'/missions/' + mission.id">
+                                    <a :href="'/missions/' + mission.id">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp">Learn More<font-awesome-icon class="ms-2" :icon="['fas', 'chevron-right']" /></button>
-                                    </router-link>
+                                    </a>
                                 </div>
                                 <div class="my-2">
-                                    <router-link :to="'/missions/' + mission.id + '#launchvideo'">
+                                    <a :href="'/missions/' + mission.id + '#launchvideo'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'play']" />Launch Video</button>
-                                    </router-link>
-                                    <router-link :to="'/missions/' + mission.id + '#gallery'">
+                                    </a>
+                                    <a :href="'/missions/' + mission.id + '#gallery'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'images']" />Gallery</button>
-                                    </router-link>
-                                    <router-link :to="'/missions/' + mission.id + '#timeline'">
+                                    </a>
+                                    <a :href="'/missions/' + mission.id + '#timeline'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'bars-staggered']" />Timeline</button>
-                                    </router-link>
+                                    </a>
                                 </div>
                                 <div class="my-2">
-                                    <router-link :to="'/missions/' + mission.id + '#launchvehicle'">
+                                    <a :href="'/missions/' + mission.id + '#launchvehicle'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'rocket']" />Launch Vehicle</button>
-                                    </router-link>
-                                    <router-link :to="'/missions/' + mission.id + '#payload'">
+                                    </a>
+                                    <a :href="'/missions/' + mission.id + '#payload'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'weight-hanging']" />Payload</button>
-                                    </router-link>
-                                    <router-link :to="'/missions/' + mission.id + '#science'">
+                                    </a>
+                                    <a :href="'/missions/' + mission.id + '#science'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'microscope']" />Science in this Mission</button>
-                                    </router-link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -121,6 +121,12 @@ export default {
                 }
             ]
         }
+    },
+    methods: {
+        doSomething() {
+            var elmnt = document.getElementById("yourId");
+            elmnt.scrollIntoView();
+        },
     }
 };
 </script>
