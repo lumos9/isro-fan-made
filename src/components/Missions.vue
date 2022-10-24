@@ -2,7 +2,7 @@
     <div class="missions-container">
         <div id="intro" class="shadow-2-strong page-item-container">
             <div id="page-title">
-                <div class="display-5">Missions</div>
+                <div class="display-5 fw-bold">Missions</div>
             </div>
         </div>
         <div class="page-item-container">
@@ -68,7 +68,7 @@ export default {
                     id: 'LVM3-M2-OneWeb',
                     date: '23rd October, 2022 - 00:07 IST',
                     year: '2022',
-                    image: 'images/lvm3-m2.jpg',
+                    image: 'images/3.jpg',
                     overview: 'The LVM3-M2 mission is a dedicated commercial mission for a foreign customer OneWeb, through NSIL. It is the first multi-satellite mission with 36 OneWeb Satellites to the LEO as the heaviest payload mass of 5,796 KG of LVM3 till date'
                 },
                 {     
@@ -133,7 +133,13 @@ export default {
 
 <style scoped>
 #intro {
-    height: 100vh;
+    background: no-repeat center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url("../assets/missions/missions_intro.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

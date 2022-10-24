@@ -4,7 +4,7 @@
             <div class="row container-xxl m-auto" v-for="newsItem in reverseList.slice(0, 1)" v-bind:key="newsItem.id">
                 <div class="page-item-container px-0">
                     <div class="fs-2 mb-4 text-start">Latest News</div>
-                    <div id="intro" class="shadow-2-strong">
+                    <div id="intro" :style="{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(${newsItem.image})`}" class="shadow-2-strong">
                         <div class="p-4">
                             <div calss="fs-3">Published on {{ newsItem.date }}</div>
                             <div class="fs-1 mb-4">{{ newsItem.title }}</div>
@@ -101,9 +101,18 @@ export default {
                     2,
                     '20th October 2022',
                     '00:07 AM IST',
-                    'ISRO launches OneWeb Satellites',
-                    'images/lvm3-m2.jpg',
+                    'ISRO scheduled to launch OneWeb Satellites',
+                    'images/news/lvm3-m2-schedule.jpg',
                     'ISRO scheduled to launch 36 OneWeb Satellites on 23rd October 2022 at 00:07 IST',
+                    'https://www.google.com'
+                ),
+                new NewsItem(
+                    2,
+                    '23rd October 2022',
+                    '00:07 AM IST',
+                    'ISRO/ NSIL launch 36 OneWeb satellites successfully ',
+                    'images/news/lvm3-m2-launch.jpg',
+                    'India marks the first dedicated commercial launch for NewSpace India Limited (NSIL) using the LVM3 rocket.',
                     'https://www.google.com'
                 )
             ]
@@ -120,7 +129,6 @@ export default {
 <style scoped>
 #intro {
     background: no-repeat center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url("../assets/news/intro.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

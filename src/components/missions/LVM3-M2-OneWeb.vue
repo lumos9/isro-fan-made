@@ -49,7 +49,7 @@
         <div>
             <div id="overview" class="full-screen-div d-flex align-items-center justify-content-center page-item-container">
                 <div class="overview-content">
-                    <div class="display-5 mb-4">Overview</div>
+                    <div class="fs-1 mb-4">Overview</div>
                     <div id="overview-text" class="container lead">
                         <p>
                             LVM3-M2 is the dedicated commercial satellite mission of NewSpace India Limited
@@ -73,35 +73,172 @@
             </div>
             <div id="launchvideo" class="full-screen-div d-flex align-items-center justify-content-center">
                 <div>
-                    <div class="display-5 mb-5">Launch Video</div>
+                    <div class="fs-1 mb-5">Launch Video</div>
                     <div>
                         <iframe class="youtube-video" src="https://www.youtube.com/embed/dao7OrlESmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div id="timeline" class="full-screen-div d-flex align-items-center justify-content-center">
-                <div>
-                    <div class="display-5 mb-5">Timeline</div>
+                <div class="container-xxl m-auto row">
+                    <div class="fs-1 mb-5">Timeline</div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <div class="stats">
+                                <div class="table-responsive">
+                                    <table class="stats-table lead">
+                                        <tbody>
+                                            <tr class="stats-row fw-normal">
+                                                <th class="stats-data">Event</th>
+                                                <th class="stats-data">Flight Time</th>
+                                                <th class="stats-data">Altitude</th>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">2S200 Ignition</td>
+                                                <td class="stats-data">0.00 secs</td>
+                                                <td class="stats-data">0.024 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">L110 Ignition</td>
+                                                <td class="stats-data">1m 46.48 secs</td>
+                                                <td class="stats-data">46.534 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">2S200 Separation</td>
+                                                <td class="stats-data">2m 10.30 secs</td>
+                                                <td class="stats-data">73.062 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">PLF Separation</td>
+                                                <td class="stats-data">2m 49.02 secs</td>
+                                                <td class="stats-data">115.483 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">L110 Separation</td>
+                                                <td class="stats-data">5m 3.56 secs</td>
+                                                <td class="stats-data">282.206 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">C25 Ignition</td>
+                                                <td class="stats-data">5m 5.96 secs</td>
+                                                <td class="stats-data">286.326 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">C25 Shut-off</td>
+                                                <td class="stats-data">15m 45.90 secs</td>
+                                                <td class="stats-data">602.380 Km</td>
+                                            </tr>
+                                            <tr class="stats-row">
+                                                <td class="stats-data">Sat-1 Separation</td>
+                                                <td class="stats-data">19m 45.90 secs</td>
+                                                <td class="stats-data">605.881 Km</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div id="launchvehicle" class="full-screen-div d-flex align-items-center justify-content-center">
-                <div>
-                    <div class="display-5 mb-5">Launch Vehicle</div>
+                <div class="container-xxl m-auto row">
+                    <div class="fs-1 mb-5">Launch Vehicle</div>
+                    <div class="col-lg-6">
+                        <div id="lv-image">
+                            <img
+                            src="../../assets/missions/lvm3-m2/launch-vehicle/lv-1.jpg"
+                            class="w-100 shadow-1-strong rounded mb-4"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-5 d-flex align-items-center justify-content-center">
+                        <div class="stats">
+                            <div class="fs-3 mb-2">Stats</div>
+                            <div>
+                                <table class="stats-table lead">
+                                    <tbody>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Vehicle Name</td>
+                                            <td class="text-end stats-data">LVM3</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Vehicle Height</td>
+                                            <td class="text-end stats-data">43.5 m</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Lift-off Mass</td>
+                                            <td class="text-end stats-data">644 t</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Number of Stages</td>
+                                            <td class="text-end stats-data">3</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Strap-on Motors</td>
+                                            <td class="text-end stats-data">2 X S200 (Solid)</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Core Stage</td>
+                                            <td class="text-end stats-data">L110 (Liquid)</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Strap-on Motors</td>
+                                            <td class="text-end stats-data">C25 (Cryo)</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Fairing</td>
+                                            <td class="text-end stats-data">5 m Ogive</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="payload" class="full-screen-div d-flex align-items-center justify-content-center">
-                <div>
-                    <div class="display-5 mb-5">Payload</div>
+                <div class="container-xxl m-auto row">
+                    <div class="fs-1 mb-5">Payload</div>
+                    <div class="col-lg-6">
+                        <div id="payload-image">
+                            <img
+                            src="../../assets/missions/lvm3-m2/payload/payload-1.jpg"
+                            class="w-100 shadow-1-strong rounded mb-4"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-5 d-flex align-items-center justify-content-center">
+                        <div class="stats">
+                            <div class="fs-3 mb-2">Stats</div>
+                            <div>
+                                <table class="stats-table lead">
+                                    <tbody>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Number of Satellites</td>
+                                            <td class="text-end stats-data">36</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Each Satellite Mass</td>
+                                            <td class="text-end stats-data">150 Kg</td>
+                                        </tr>
+                                        <tr class="stats-row">
+                                            <td class="text-start stats-data">Total Mass</td>
+                                            <td class="text-end stats-data">5,796 Kg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!---<div id="science" class="full-screen-div d-flex align-items-center justify-content-center">
                 <div>
-                    <div class="display-5 mb-5">Science</div>
+                    <div class="fs-1 mb-5">Science</div>
                 </div>
             </div>-->
             <div id="gallery" class="container full-screen-div d-flex align-items-center justify-content-center">
                 <div>
-                    <div class="display-5 mb-5">Gallery</div>
+                    <div class="fs-1 mb-5">Gallery</div>
                     <!-- Gallery -->
                     <div class="row text-center text-lg-start">
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -282,5 +419,29 @@ export default {
     margin: 1;
     text-indent: 2rem;
     text-align: justify;
+}
+
+.stats {
+    width: 80%;
+    margin: auto;
+}
+
+.stats-table {
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    width: 33.33%;
+}
+
+.stats-row {
+    border-bottom: 0.2px solid grey;
+    padding: 3rem;
+}
+
+.stats-data {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 </style>

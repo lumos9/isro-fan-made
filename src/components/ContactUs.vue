@@ -2,7 +2,7 @@
     <div class="contact-container">
         <div class="page-item-container container">
             <div class="write-us-container">
-                <div class="display-5 my-5">Write to Us</div>
+                <div class="fs-1 my-5">Write to Us</div>
                     <div>
                         <div>
                             <div class="row mb-3">
@@ -49,24 +49,24 @@
                     </div>
             </div>
             <div class="offices-container my-4">
-                <div class="display-5 mb-4">Offices</div>
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="fs-1 mb-4">Offices</div>
+                <div class="d-flex align-items-center justify-content-center lead">
                         <div>
                             <div class="mb-4">
-                                <div class="contact-heading mb-2">Hours of Operation</div>
+                                <div class="contact-heading mb-2 py-3 fs-4">Hours of Operation</div>
                                 <div>(Indian Standard Time)</div>
                                 <div>Monday - Friday</div>
                                 <div>9 AM - 5 PM</div>
                             </div>
                             <div class="mb-4">
-                                <div class="contact-heading mb-2">Address</div>
+                                <div class="contact-heading mb-2 py-3 fs-4">Address</div>
                                 <div>ISRO Headquarters</div>
                                 <div>Antariksh Bhavan</div>
                                 <div>New BEL Road</div>
                                 <div>Bengaluru, India - 560 094</div>
                             </div>
                             <div class="mb-4">
-                                <div class="contact-heading mb-2">Contact Info</div>
+                                <div class="contact-heading mb-2 py-3 fs-4">Contact Info</div>
                                 <div><!-- <font-awesome-icon icon="envelope" /> -->icrb@isro.gov.in</div>
                                 <div><!-- <font-awesome-icon icon="phone" /> -->+91-80-22172465</div>
                             </div>
@@ -74,7 +74,7 @@
                     </div>
             </div>
             <div class="social-container">
-                <div class="display-5 my-5">Follow Us</div>
+                <div class="fs-1 my-5">Follow Us</div>
                     <div class="d-flex align-items-center justify-content-center">
                         <div class="container">
                             <div class="row">
