@@ -65,9 +65,12 @@
                             This mission is the 5th flight of LVM3
                         </p>
                     </div>
-                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['fas', 'location-dot']" />Satish Dhawan Space Centre, Sriharikota</div>
-                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />22nd October 2022, 18:37 UTC</div>
-                    <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />23rd October 2022, 00:07 IST</div>
+                    <div class="w-60 m-auto text-start">
+                        <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['fas', 'location-dot']" />Satish Dhawan Space Centre, Sriharikota</div>
+                        <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />22nd October 2022, 18:37 UTC</div>
+                        <div class="fs-5 mb-4"><font-awesome-icon class="me-3" :icon="['far', 'clock']" />23rd October 2022, 00:07 IST</div>
+                    </div>
+                    
                 </div>
                 
             </div>

@@ -1,9 +1,36 @@
 <template>
     <div class="contact-container">
-        <div class="page-item-container container">
-            <div class="write-us-container">
-                <div class="fs-1 my-5">Write to Us</div>
+        <div class="full-screen-div page-item-container">
+            <div class="mb-3">
+                <div class="fs-1 mb-1">Contact Us</div>
+                <div class="lead mb-4">Any questions or feedback? Just write a message!</div>
+            </div>
+            <div class="row m-auto container-xxl d-flex align-items-center justify-content-center">
+                <div class="col-lg-6 d-flex align-items-center justify-content-evenly">
                     <div>
+                        <div class="mb-5 text-start">
+                            <div class="mb-5"><font-awesome-icon class="me-3" :icon="['fas', 'phone']" />+91-80-2217246</div>
+                            <div class="mb-5"><font-awesome-icon class="me-3" :icon="['fas', 'envelope']" />icrb@isro.gov.in</div>
+                            <div class="mb-5">
+                                <div><font-awesome-icon class="me-3" :icon="['fas', 'location-dot']" />Antariksh Bhavan, New BEL Road, Bengaluru, India - 560 094</div>
+                            </div>
+                            <div class="mb-5">
+                                <div><font-awesome-icon class="me-3" :icon="['far', 'clock']" />Monday - Friday, 9 AM - 5 PM, Indian Standard Time</div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col fs-5"><font-awesome-icon :icon="['fab', 'twitter']" /></div>
+                                    <div class="col fs-5"><font-awesome-icon :icon="['fab', 'instagram']" /></div>
+                                    <div class="col fs-5"><font-awesome-icon :icon="['fab', 'youtube']"/></div>
+                                    <div class="col fs-5"><font-awesome-icon :icon="['fab', 'linkedin']" /></div>
+                                    <div class="col fs-5"><font-awesome-icon :icon="['fab', 'facebook']" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="write-us-container">
                         <div>
                             <div class="row mb-3">
                                 <div class="col">
@@ -39,54 +66,15 @@
                                 <label for="floatingSubject">Subject</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control pt-5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
+                                <textarea class="form-control pt-5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
                                 <label for="floatingTextarea2">Question / Feedback</label>
                             </div>
                             <div>
-                                <button type="submit" class="btn btn-lg btn-outline-dark explore-button-opp">Send</button>
+                                <button type="submit" class="btn btn-md btn-outline-dark explore-button-opp">Send</button>
                             </div>
                         </div>
                     </div>
-            </div>
-            <div class="offices-container my-4">
-                <div class="fs-1 mb-4">Offices</div>
-                <div class="d-flex align-items-center justify-content-center lead">
-                        <div>
-                            <div class="mb-4">
-                                <div class="contact-heading mb-2 py-3 fs-4">Hours of Operation</div>
-                                <div>(Indian Standard Time)</div>
-                                <div>Monday - Friday</div>
-                                <div>9 AM - 5 PM</div>
-                            </div>
-                            <div class="mb-4">
-                                <div class="contact-heading mb-2 py-3 fs-4">Address</div>
-                                <div>ISRO Headquarters</div>
-                                <div>Antariksh Bhavan</div>
-                                <div>New BEL Road</div>
-                                <div>Bengaluru, India - 560 094</div>
-                            </div>
-                            <div class="mb-4">
-                                <div class="contact-heading mb-2 py-3 fs-4">Contact Info</div>
-                                <div><!-- <font-awesome-icon icon="envelope" /> -->icrb@isro.gov.in</div>
-                                <div><!-- <font-awesome-icon icon="phone" /> -->+91-80-22172465</div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="social-container">
-                <div class="fs-1 my-5">Follow Us</div>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'twitter']" /></div>
-                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'instagram']" /></div>
-                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'youtube']"/></div>
-                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'linkedin']" /></div>
-                                <div class="col fs-1"><font-awesome-icon :icon="['fab', 'facebook']" /></div>
-                            </div>
-                        </div>
-                        
-                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -97,8 +85,7 @@
 
 <style scoped>
 .write-us-container, .offices-container, .social-container {
-    height: -webkit-fill-available;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
