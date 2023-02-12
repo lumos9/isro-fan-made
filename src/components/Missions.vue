@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="my-2">
                                     <a :href="'/missions/' + mission.id + '#launchvehicle'">
-                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'rocket']" />Launch Vehicle</button>
+                                        <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'rocket']" />Vehicle</button>
                                     </a>
                                     <a :href="'/missions/' + mission.id + '#payload'">
                                         <button type="button" class="btn btn-outline-dark btn-md explore-button-opp my-2 me-2"><font-awesome-icon class="me-2" :icon="['fas', 'weight-hanging']" />Payload</button>
@@ -63,14 +63,6 @@ export default {
     data() {
         return {
             missionsList: [
-            {     
-                    name: 'LVM3 M2 / OneWeb India - 1',
-                    id: 'LVM3-M2-OneWeb',
-                    date: '23rd October, 2022 - 00:07 IST',
-                    year: '2022',
-                    image: 'images/3.jpg',
-                    overview: 'The LVM3-M2 mission is a dedicated commercial mission for a foreign customer OneWeb, through NSIL. It is the first multi-satellite mission with 36 OneWeb Satellites to the LEO as the heaviest payload mass of 5,796 KG of LVM3 till date'
-                },
                 {     
                     name: 'EOS - 2',
                     id: 'launch - EOS - 2',

@@ -3,8 +3,11 @@ import Landing from '../components/Landing.vue';
 import About from '../components/About.vue';
 import Careers from '../components/Careers.vue';
 import Contact from '../components/ContactUs.vue';
+import Launches from '../components/Launches.vue';
 import Missions from '../components/Missions.vue';
+import Vehicles from '../components/Missions.vue';
 import LVM3M2OneWeb from '../components/missions/LVM3-M2-OneWeb.vue';
+import SSLVD2_EOS07 from '../components/missions/SSLV-D2_EOS-07.vue';
 import Newsroom from '../components/Newsroom.vue';
 import NotFound from '../components/404.vue';
 import Timeline from '../components/Timeline.vue';
@@ -22,13 +25,16 @@ const routes = [
     { path: '/careers', component: Careers },
     { path: '/contact', component: Contact },
     { path: '/contactus', component: Contact },
+    { path: '/launches', component: Launches },
     { path: '/missions', component: Missions },
+    { path: '/vehicles', component: Vehicles },
     { path: '/newsroom', component: Newsroom },
     { path: '/news', component: Newsroom },
     { path: '/press', component: Newsroom },
     { path: '/timeline', component: Timeline },
     { path: '/updates', component: Newsroom },
     { path: '/missions/lvm3-m2-oneweb', component: LVM3M2OneWeb},
+    { path: '/missions/sslv-d2_eos-07', component: SSLVD2_EOS07},
     { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 // 3. Create the router instance and pass the `routes` option

@@ -26,8 +26,18 @@
                                 </router-link>
                             </li>
                             <li class="nav-item">
+                                <router-link to="/launches" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Launches</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
                                 <router-link to="/missions" class="nav-link px-4 view-link">
                                     <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Missions</div>
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/vehicles" class="nav-link px-4 view-link">
+                                    <div data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Vehicles</div>
                                 </router-link>
                             </li>
                             <li class="nav-item">
