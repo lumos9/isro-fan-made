@@ -6,7 +6,7 @@
                     <div class="fs-2 mb-4 text-start">Latest News</div>
                     <div id="intro" :style="{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(${newsItem.image})`}" class="shadow-2-strong">
                         <div class="p-4">
-                            <div calss="fs-3">Published on {{ newsItem.date }}</div>
+                            <div calss="fs-3">{{ newsItem.date }}</div>
                             <div class="fs-1 mb-4">{{ newsItem.title }}</div>
                             <div class="lead">{{ newsItem.overview }}</div>
                             <div class="mt-4">
@@ -22,14 +22,14 @@
 
             <div class="row container-xxl m-auto">
                 <div class="fs-2 my-4 text-start p-0" v-if="reverseList.length > 1">Other Articles</div>
-                <div v-for="newsItem in reverseList.slice(1)" v-bind:key="newsItem.id" class="col-lg-6 p-1">
+                <div v-for="newsItem in reverseList.slice(1)" v-bind:key="newsItem.id" class="col-lg-6 p-4">
                     <div>
                         <div :style="{backgroundImage: `url(${newsItem.image})`}" id="news-item-image"></div>
-                        <div class="my-5 text-start">
-                            <div class="mb-4">
+                        <div class="mt-4 mb-5 text-start">
+                            <div class="mb-2">
                                 <!---<div>{{ newsItem.date }} - {{ newsItem.time }}</div>-->
-                                <div>Published on {{ newsItem.date }}</div>
-                                <div class="fs-3">{{ newsItem.title }}</div>
+                                <div>{{ newsItem.date }}</div>
+                                <div class="fs-4">{{ newsItem.title }}</div>
                             </div>
                             <div class="mb-4">{{ newsItem.overview }}</div>
                             <div>
@@ -110,9 +110,18 @@ export default {
                     2,
                     '23rd October 2022',
                     '00:07 AM IST',
-                    'ISRO/ NSIL launch 36 OneWeb satellites successfully ',
+                    'ISRO/ NSIL deployed 36 OneWeb satellites successfully ',
                     'images/news/lvm3-m2-launch.jpg',
                     'India marks the first dedicated commercial launch for NewSpace India Limited (NSIL) using the LVM3 rocket.',
+                    'https://www.google.com'
+                ),
+                new NewsItem(
+                    2,
+                    '26th March 2023',
+                    '09:00 AM IST',
+                    'ISRO/ NSIL deployed 36 OneWeb satellites successfully ',
+                    'images/news/lvm3-m3-launch.jpg',
+                    'India marks the second dedicated commercial launch for NewSpace India Limited (NSIL) using the LVM3 rocket.',
                     'https://www.google.com'
                 )
             ]

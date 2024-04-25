@@ -41,7 +41,7 @@
                         <div id="logo"></div>
                         <div class="mainTitle">
                             <!--<h1 id="title1" class="w-title">I<div class="fullform">ndian</div> S<div class="fullform">pace</div> R<div class="fullform">esearch</div> O<div class="fullform">rganisation</div></h1>-->
-                            <h1 id="title1" class="display-4">Indian Space Research Organisation</h1>
+                            <h1 id="title1" class="display-5">Indian Space Research Organisation</h1>
                         </div>
                         <div class="mainTitle">
                             <h2 id="title2" class="display-6">Department of Space</h2>
