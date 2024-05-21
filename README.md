@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+A concept website for Indian Space Research Organization (ISRO)
+All the content is a merge of both ISRO owned data and dummy data. The website is meant for design demo purposes only but not for publishing
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+1. Clone this repo
+2. `cd` into the directory and launch it locally with the following command
+    ```bash
+    npm run dev
+    ```
